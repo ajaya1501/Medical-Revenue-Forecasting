@@ -130,7 +130,6 @@ import numpy as np
 
 #THIS IS ENTIRELY LOCAL READING OF THE FILE WHICH ISNT SUITABLE FOR STAGING OR PRODUCTION
 def read_file(file1, file2, file3):
-    import pandas as pd
     df1 = pd.read_csv(file1)
     df2 = pd.read_csv(file2)
     df3 = pd.read_csv(file3)
