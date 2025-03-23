@@ -5,4 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
+def merge(data1, data2,data3):
+    return pd.concat([data1, data2,data3], axis=0)
+
+
 
