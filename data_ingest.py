@@ -1,8 +1,8 @@
-import pymssql
-import os
-from dotenv import load_dotenv
-import pandas as pd
-import numpy as np
+# import pymssql
+# import os
+# from dotenv import load_dotenv
+# import pandas as pd
+# import numpy as np
 
 
 # # Load environment variables
@@ -128,12 +128,40 @@ import numpy as np
 
 
 
-#THIS IS ENTIRELY LOCAL READING OF THE FILE WHICH ISNT SUITABLE FOR STAGING OR PRODUCTION
-def read_file(file1, file2, file3):
-    df1 = pd.read_csv(file1)
-    df2 = pd.read_csv(file2)
-    df3 = pd.read_csv(file3)
-    return pd.concat([df1, df2, df3], axis=0, ignore_index=True)
+# #THIS IS ENTIRELY LOCAL READING OF THE FILE WHICH ISNT SUITABLE FOR STAGING OR PRODUCTION
+# import pandas as pd
+# import pandas as pd
+# from data_preprocess import read_saved_csv  # Import function from data_preprocess.py
+
+# def read_and_concat_csv(file1, file2, file3, output_file="concatenated_output.csv"):
+#     try:
+#         # Read the CSV files
+#         df1 = pd.read_csv(file1)
+#         df2 = pd.read_csv(file2)
+#         df3 = pd.read_csv(file3)
+        
+#         # Concatenate along axis 0 (rows)
+#         concatenated_df = pd.concat([df1, df2, df3], axis=0, ignore_index=True)
+
+#         # Save to a new CSV file
+#         concatenated_df.to_csv(output_file, index=False)
+#         print(f"File saved successfully: {output_file}")
+
+#         # Automatically read the saved file
+#         read_saved_csv(output_file)
+
+#         return concatenated_df
+
+#     except FileNotFoundError as e:
+#         print(f"Error: {e}")
+#         return None
+
+# # Call the function
+# df = read_and_concat_csv(
+#     r"ip bills.xls Dec_aCSV1.csv", 
+#     r"ip bills.xls nov_aCSV1.csv", 
+#     r"ip bills.xls oct_aCSV1.csv"
+# )
 
 
-read_file('ip bills.xls Dec_aCSV1.csv', 'ip bills.xls nov_aCSV1.csv', 'ip bills.xls oct_aCSV1.csv')
+# read_and_concat_csv('ip bills.xls Dec_aCSV1.csv', 'ip bills.xls nov_aCSV1.csv', 'ip bills.xls oct_aCSV1.csv')
