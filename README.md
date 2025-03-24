@@ -44,3 +44,8 @@ mlflow server -h 0.0.0.0 --default-artifact-root s3://mllllfflow-buc-11
 
 
 export MLFLOW_TRACKING_URI=http://ec2-13-203-206-18.ap-south-1.compute.amazonaws.com:5000/
+
+
+## Description 
+
+This project focuses on forecasting the net amount of medical revenue for the next 15 days based on key factors such as date and net amount. It employs time series forecasting techniques and statistical methods to generate predictions. Additionally, MLflow is integrated for model tracking and registry, with model artifacts stored on AWS S3. The deployment is hosted on an EC2 instance, ensuring scalability and efficient model inference.
